@@ -1,0 +1,98 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ui_main.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.1
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
+        MainWindow.setMinimumSize(QtCore.QSize(800, 600))
+        MainWindow.setMaximumSize(QtCore.QSize(800, 600))
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(20, 20, 770, 40))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
+        self.label.setMinimumSize(QtCore.QSize(770, 40))
+        self.label.setMaximumSize(QtCore.QSize(770, 40))
+        font = QtGui.QFont()
+        font.setPointSize(24)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.sessisons = QtWidgets.QListWidget(self.centralwidget)
+        self.sessisons.setGeometry(QtCore.QRect(320, 90, 461, 471))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.sessisons.setFont(font)
+        self.sessisons.setObjectName("sessisons")
+        self.sess = QtWidgets.QPushButton(self.centralwidget)
+        self.sess.setGeometry(QtCore.QRect(10, 330, 301, 71))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.sess.setFont(font)
+        self.sess.setObjectName("sess")
+        self.del_sess = QtWidgets.QPushButton(self.centralwidget)
+        self.del_sess.setGeometry(QtCore.QRect(10, 250, 301, 71))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.del_sess.setFont(font)
+        self.del_sess.setObjectName("del_sess")
+        self.ticket_cinema = QtWidgets.QPushButton(self.centralwidget)
+        self.ticket_cinema.setGeometry(QtCore.QRect(10, 170, 301, 71))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.ticket_cinema.setFont(font)
+        self.ticket_cinema.setObjectName("ticket_cinema")
+        self.login = QtWidgets.QPushButton(self.centralwidget)
+        self.login.setGeometry(QtCore.QRect(10, 470, 301, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.login.setFont(font)
+        self.login.setObjectName("login")
+        self.reg = QtWidgets.QPushButton(self.centralwidget)
+        self.reg.setGeometry(QtCore.QRect(10, 520, 301, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.reg.setFont(font)
+        self.reg.setObjectName("reg")
+        self.info = QtWidgets.QPushButton(self.centralwidget)
+        self.info.setGeometry(QtCore.QRect(10, 90, 301, 71))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.info.setFont(font)
+        self.info.setObjectName("info")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Фильмотека"))
+        self.label.setText(_translate("MainWindow", "Сеть камерных кинотеатров \"Фильмотека\""))
+        self.sess.setText(_translate("MainWindow", "Добавить сеанс"))
+        self.del_sess.setText(_translate("MainWindow", "Удалить сеанс"))
+        self.ticket_cinema.setText(_translate("MainWindow", "Купить билет"))
+        self.login.setText(_translate("MainWindow", "Вход"))
+        self.reg.setText(_translate("MainWindow", "Регистрация"))
+        self.info.setText(_translate("MainWindow", "Информация об аккаунте"))
